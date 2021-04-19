@@ -18,7 +18,7 @@ ul {
 }
 .list-inline li {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px;
 }
 .text-uppercase {
     text-transform: uppercase;
@@ -61,6 +61,7 @@ aside {
 }
 
 /* main section */
+/* nav body */
 section {
     overflow-y: auto;
     width: calc(100vw - 300px);
@@ -68,8 +69,7 @@ section {
 }
 
 section > ul {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 .list-inline a {
     text-decoration: none;
@@ -77,6 +77,23 @@ section > ul {
 section > .list-inline {
     padding: 15px;
 }
+
+/* main block */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-block {
+    margin: 15px;
+    text-align: center;
+}
+
+.image-block img {
+    width: 150px;
+    height: 150px;
+}
+
 
 /* footer */
 footer {
