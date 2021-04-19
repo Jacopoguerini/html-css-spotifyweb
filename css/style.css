@@ -9,9 +9,16 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
-    overflow-y: auto;
+ul {
+    list-style: none;
 }
+.list-inline li {
+    display: inline-block;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
 /* fixed bar */
 .fixed-top {
     width: 100%;
@@ -36,12 +43,27 @@ main {
 aside {
     width: 300px;
     background-color: yellow;
+    padding-left: 25px;
+}
+
+.lateral-menu li {
+    display: block;
+    line-height: 40px;
+}
+.lateral-menu img {
+    width: 40px;
+    vertical-align: middle;
 }
 
 /* main section */
 section {
-
+    overflow-y: auto;
     width: calc(100vw - 300px);
+    background-color: blue;
+}
+
+section > ul {
+    text-align: center;
 }
 
 /* footer */
