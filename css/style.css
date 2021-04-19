@@ -9,8 +9,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-a {
+h2 {
     color: white;
+    margin: 15px 0;
+}
+h3 {
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+}
+p {
+    color: grey;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+a {
+    color: grey;
+    font-weight: 700;
 }
 
 ul {
@@ -19,26 +35,10 @@ ul {
 .list-inline li {
     display: inline-block;
     padding: 10px;
+    font-size: 14px;
 }
 .text-uppercase {
     text-transform: uppercase;
-}
-
-.container-flex {
-    display: flex;
-}
-
-.title {
-    padding-left: 15px;
-}
-
-.image-block {
-    text-align: center;
-    width: calc(90% / 6);
-}
-.image-block img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* fixed bar */
@@ -63,7 +63,7 @@ ul {
 
 /* navbar */
 aside {
-    width: 300px;
+    width: 15%;
     background-color: yellow;
     padding-left: 25px;
 }
@@ -81,8 +81,8 @@ aside {
 /* nav body */
 section {
     overflow-y: auto;
-    width: calc(100vw - 300px);
-    background-color: blue;
+    width: calc(100vw - 15%);
+    background-color: #141922;
 }
 
 section > ul {
@@ -96,19 +96,32 @@ section > .list-inline {
 }
 
 /* main block */
-#recently-played,
-#created-for {
-    padding: 15px;
-} 
-
-#recently-played .container-flex {
-    justify-content: space-between;
+.container-flex {
+    display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
-#created-for .container-flex {
-    justify-content: flex-start;
-    flex-wrap: wrap;
+.album-list {
+    padding: 0 20px;
+}
+.album-list > p {
+    margin-bottom: 15px;
+}
+
+.image-block {
+    text-align: center;
+    width: calc(90% / 6);
+    margin: 10px 15px 10px 0;
+}
+
+.image-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+#artists img {
+    border-radius: 50%;
 }
 
 /* footer */
@@ -142,10 +155,6 @@ footer {
 @media screen and (min-width: 878px) and (max-width: 1170px) {
     .image-block {
         width: calc(90% / 4);
-        margin: 1%;
-    }
-    #recently-played .container-flex {
-        justify-content: flex-start;
     }
 
 }
@@ -156,6 +165,8 @@ footer {
     }
 }
 
-@media screen and (min-width: 639px) and (max-width: 877px) {
-
+@media screen and (max-width: 638px) {
+    .image-block {
+        width: calc(90% / 2);
+    }
 }
