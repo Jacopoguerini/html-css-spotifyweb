@@ -9,11 +9,16 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    color: white;
+}
+
 ul {
     list-style: none;
 }
 .list-inline li {
     display: inline-block;
+    padding: 10px 20px;
 }
 .text-uppercase {
     text-transform: uppercase;
@@ -63,7 +68,14 @@ section {
 }
 
 section > ul {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.list-inline a {
+    text-decoration: none;
+}
+section > .list-inline {
+    padding: 15px;
 }
 
 /* footer */
@@ -71,7 +83,6 @@ footer {
     height: 90px;
     background-color: green;
 }
-
 
 
 /* scrollbar */
