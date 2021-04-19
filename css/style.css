@@ -5,32 +5,70 @@
     box-sizing: border-box;
 }
 
-main {
-    height: calc(100vh - 90px);
-    overflow: hidden;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
+main {
+    overflow-y: auto;
+}
+/* fixed bar */
 .fixed-top {
+    width: 100%;
     height: 80px;
     background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity:  0.4;
 }
 
-.container {
+/* page body */
+.wrapper {
     display: flex;
-    height: 100%;
+    height: calc(100vh - 90px);
+}
+.wrapper > *{
+    padding-top: 80px;
 }
 
-.navbar {
+/* navbar */
+aside {
     width: 300px;
     background-color: yellow;
 }
 
+/* main section */
 section {
-    background-color: blue;
+
     width: calc(100vw - 300px);
 }
 
+/* footer */
 footer {
     height: 90px;
     background-color: green;
 }
+
+
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
