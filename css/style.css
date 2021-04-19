@@ -1,0 +1,36 @@
+/* common  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: calc(100vh - 90px);
+    overflow: hidden;
+}
+
+.fixed-top {
+    height: 80px;
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.navbar {
+    width: 300px;
+    background-color: yellow;
+}
+
+section {
+    background-color: blue;
+    width: calc(100vw - 300px);
+}
+
+footer {
+    height: 90px;
+    background-color: green;
+}
