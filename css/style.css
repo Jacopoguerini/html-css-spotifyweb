@@ -102,6 +102,16 @@ nav {
     margin-right: 5px;
 }
 
+#home-menu {
+    padding: 0;
+}
+#home-menu li {
+    padding-left: 20px;
+}
+#home-menu .active {
+    border-left: 3px solid #1DB954; 
+}
+
 /* playlist menu */
 #playlist-menu {
     margin-top: 15px;
@@ -128,6 +138,10 @@ nav {
 #playlist-menu li {
     padding-bottom: 10px;
 }
+#playlist-menu li:hover {
+    color: white;
+    cursor: pointer;
+}
 
 /* nav-bottom */
 .nav-bottom {
@@ -153,11 +167,14 @@ nav {
     font-size: 10px;
     margin-left: 8px;
 }
+.download:hover span {
+    color: white;
+
+}
 
 .account {
     padding: 10px 0;
 }
-
 .account img {
     width: 25px;
     height: 25px;
@@ -171,6 +188,7 @@ nav {
     color: white;
     margin-left: 10px;
 }
+
 #home-menu li:hover {
     color: white;
     cursor: pointer;
@@ -244,9 +262,20 @@ nav {
     display: inline-block;
     padding: 10px;
     font-size: 12px;
+    position: relative;
 }
 .list-inline a {
     text-decoration: none;
+}
+.list-inline .active:before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid #1DB954;
 }
 .list-inline li a:hover {
     color: white;
@@ -321,9 +350,21 @@ footer {
     color: grey;
     margin-right: 10px;
 }
+
+.footer-left img:hover {
+    cursor: pointer;
+}
+.footer-left i:hover {
+    color: white;
+    cursor: pointer;
+}
 .song {
     width: 45%;
     margin-left: 5px;
+}
+.song p:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* footer center */
