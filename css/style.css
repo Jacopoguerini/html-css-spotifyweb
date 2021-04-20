@@ -119,8 +119,6 @@ nav {
     flex-direction: column;
 }
 .add-playlist {
-    display: flex;
-    align-items: center;
     font-size: 14px;
 }
 #playlist-menu i {
@@ -133,7 +131,6 @@ nav {
 #playlist-menu ul {
     margin-top: 15px;
     overflow-y: auto;
-    flex-shrink: 3;
 }
 #playlist-menu li {
     padding-bottom: 10px;
@@ -202,7 +199,7 @@ nav {
 .add-playlist:hover span {
     color: white;
 }
-.add-playlist:hover i {
+#playlist-menu .add-playlist:hover i {
     background-color: white;
 }
 /* main section */
@@ -380,6 +377,13 @@ footer {
     font-size: 30px;
     margin: 0 5px;
 }
+.icons i:hover {
+    cursor: pointer;
+}
+.icons .fa-play-circle:hover {
+    transform: scale(1.2);
+}
+
 .bar {
     height: 30px;
     display: flex;
@@ -399,6 +403,27 @@ footer {
     height: 100%;
     background-color: lightgrey;
     border-radius: 20%;
+    position: relative;
+}
+
+.progression-bar:hover {
+    cursor: pointer;
+}
+.progression-bar:hover .state-bar {
+    background-color: #1DB954;
+    cursor: pointer;
+}
+.progression-bar:hover .state-bar::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: lightgray;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* footer right */
@@ -411,6 +436,30 @@ footer {
     width: 30%;
     height: 100%;
     background-color: lightgrey;
+    position: relative;
+}
+.volume-bar:hover {
+    cursor: pointer;
+}
+.volume-bar:hover .volume-state-bar {
+    background-color: #1DB954;
+    cursor: pointer;
+}
+.volume-bar:hover .volume-state-bar::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: lightgray;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-right i:hover {
+    cursor: pointer;
 }
 
 /* scrollbar */
@@ -563,5 +612,23 @@ footer {
     }
     .bar span {
         font-size: 10px;
+    }
+}
+
+/* media query height */
+@media screen and (max-height: 686px) {
+    #playlist-menu {
+        height: 40vh;
+    }
+
+    #playlist-menu ul {
+        overflow-y: scroll;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-height: 458px) {
+    .nav-bottom {
+        display: none;
     }
 }
