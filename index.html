@@ -10,17 +10,17 @@
         <!-- font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> 
         <!-- icon image -->
-        <link rel="icon" href="img/logo-small.svg" type="image/icon type">
+        <link rel="icon" href="img/favicon.ico" type="image/icon type">
         <!-- css -->
         <link rel="stylesheet" href="css/style.css">
         <title>My Spotify</title>
     </head>
     <body>
-        <!-- main -->
-        <main>
-            <div class="fixed-top"></div>
-            <div class="wrapper">
-                <aside class="navbar">
+        <div class="container-100">
+            <!-- main -->
+            <main>
+
+                <nav class="navbar">
                     <!-- lateral menu -->
                     <ul class="lateral-menu">
                         <li class="active">
@@ -43,10 +43,15 @@
                         <li>Cerca</li>
                         <li>La tua libreria</li>
                     </ul>
-                </aside>
-                <section>
-                    <!-- nav body -->
-                    <ul class="list-inline text-uppercase">
+                </nav>
+                
+                <div class="page-core">
+                    <div class="fixed-top"></div>
+                    
+                    <!-- main block --> 
+                    <div class="main-block">
+                        <!-- nav body -->
+                        <ul class="list-inline text-uppercase">
                         <li>
                             <a href="#">In evidenza</a>
                         </li>
@@ -65,96 +70,97 @@
                         <li>
                             <a href="#">scopri</a>
                         </li>
-                    </ul>
-                    <!-- /nav body -->
+                        </ul>
+                        <!-- /nav body -->
 
-                    <!-- main block -->    
-                    <!-- recently played -->
-                    <div class="album-list">
-                        <h2>Recently played</h2>
-                        <div class="container-flex">
-                            <div class="image-block">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                <h3>Heavy Metal</h3>
-                                <p>Subtitle</p>
-                            </div>
+   
+                        <!-- recently played -->
+                        <div class="album-list">
+                            <h2>Recently played</h2>
+                            <div class="container-flex">
+                                <div class="image-block">
+                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <h3>Heavy Metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
 
-                            <div class="image-block">
-                                <img src="img/stranger.jpeg" alt="">
-                                <h3>Stranger Things, Vol. 1 (A Netflix Original Series Soundtrack) </h3>
-                                <p>Kyle Dixon &amp; Michael Stein</p>
-                            </div>
+                                <div class="image-block">
+                                    <img src="img/stranger.jpeg" alt="">
+                                    <h3>Stranger Things, Vol. 1 (A Netflix Original Series Soundtrack) </h3>
+                                    <p>Kyle Dixon &amp; Michael Stein</p>
+                                </div>
 
-                            <div class="image-block">
-                                <img src="img/aquietplace.jpeg" alt="">
-                                <h3>A Quiet Place</h3>
-                                <p>Subtitle</p>
-                            </div>
+                                <div class="image-block">
+                                    <img src="img/aquietplace.jpeg" alt="">
+                                    <h3>A Quiet Place</h3>
+                                    <p>Subtitle</p>
+                                </div>
 
-                            <div class="image-block">
-                                <img src="img/split.jpeg" alt="">
-                                <h3>Split</h3>
-                                <p>Subtitle</p>
-                            </div>
+                                <div class="image-block">
+                                    <img src="img/split.jpeg" alt="">
+                                    <h3>Split</h3>
+                                    <p>Subtitle</p>
+                                </div>
 
-                            <div class="image-block">
-                                <img src="img/cure.jpeg" alt="">
-                                <h3>A Cure for Wellness</h3>
-                                <p>Subtitle</p>
-                            </div>
+                                <div class="image-block">
+                                    <img src="img/cure.jpeg" alt="">
+                                    <h3>A Cure for Wellness</h3>
+                                    <p>Subtitle</p>
+                                </div>
 
-                            <div class="image-block">
-                                <img src="img/sinister.jpeg" alt="">
-                                <h3>Sinister</h3>
-                                <p>Subtitle</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /recently played -->
-
-                    <!-- creato per John Doe -->
-                    <div class="album-list">
-                        <h2>Creato per John Doe</h2>
-                        <p>Più ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
-                        <div class="container-flex">
-                            <div class="image-block">
-                                <img src="img/radar.jpeg" alt="">
-                                <h3>Release Radar</h3>
-                            </div>
-
-                            <div class="image-block">
-                                <img src="img/mixdaily.jpeg" alt="">
-                                <h3>Daily Mix 1</h3>
+                                <div class="image-block">
+                                    <img src="img/sinister.jpeg" alt="">
+                                    <h3>Sinister</h3>
+                                    <p>Subtitle</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- creato per John Doe -->
+                        <!-- /recently played -->
 
-                    <!-- artisti più popolari -->
-                    <div class="album-list" id="artists">
-                        <h2>Artisti pi&ugrave; popolari</h2>
-                        <p>Più ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
-                        <div class="container-flex">
-                            <div class="image-block">
-                                <img src="img/youg.jpeg" alt="">
-                                <h3>Lana Del Rey</h3>
-                            </div>
+                        <!-- creato per John Doe -->
+                        <div class="album-list">
+                            <h2>Creato per John Doe</h2>
+                            <p>Più ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+                            <div class="container-flex">
+                                <div class="image-block">
+                                    <img src="img/radar.jpeg" alt="">
+                                    <h3>Release Radar</h3>
+                                </div>
 
-                            <div class="image-block">
-                                <img src="img/einaudi.jpeg" alt="">
-                                <h3>Ludovico Einaudi</h3>
+                                <div class="image-block">
+                                    <img src="img/mixdaily.jpeg" alt="">
+                                    <h3>Daily Mix 1</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- /artisti più popolari -->
+                        <!-- creato per John Doe -->
+
+                        <!-- artisti più popolari -->
+                        <div class="album-list" id="artists">
+                            <h2>Artisti pi&ugrave; popolari</h2>
+                            <p>Più ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
+                            <div class="container-flex">
+                                <div class="image-block">
+                                    <img src="img/youg.jpeg" alt="">
+                                    <h3>Lana Del Rey</h3>
+                                </div>
+
+                                <div class="image-block">
+                                    <img src="img/einaudi.jpeg" alt="">
+                                    <h3>Ludovico Einaudi</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /artisti più popolari -->
+                    </div>    
                     <!-- /main block -->
-                </section>
-            </div>
-        </main>
-        <!-- /main -->
+                </div>
+            </main>
+            <!-- /main -->
 
-        <!-- footer -->
-        <footer></footer>
-        <!-- /footer -->
+            <!-- footer -->
+            <footer></footer>
+            <!-- /footer -->
+        </div>
     </body>
 </html>
