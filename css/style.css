@@ -178,7 +178,15 @@ nav {
 #home-menu li:hover img {
     opacity: 1;
 }
-
+.add-playlist:hover {
+    cursor: pointer;
+}
+.add-playlist:hover span {
+    color: white;
+}
+.add-playlist:hover i {
+    background-color: white;
+}
 /* main section */
 /* page core */
 .page-core {
