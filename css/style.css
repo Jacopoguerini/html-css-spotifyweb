@@ -57,6 +57,8 @@ nav {
     width: 230px;
     color: grey;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-logo {
@@ -103,6 +105,8 @@ nav {
 /* playlist menu */
 #playlist-menu {
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .add-playlist {
     display: flex;
@@ -118,7 +122,8 @@ nav {
 }
 #playlist-menu ul {
     margin-top: 15px;
-    overflow: auto;
+    overflow-y: auto;
+    flex-shrink: 3;
 }
 #playlist-menu li {
     padding-bottom: 10px;
@@ -166,6 +171,13 @@ nav {
     color: white;
     margin-left: 10px;
 }
+#home-menu li:hover {
+    color: white;
+    cursor: pointer;
+}
+#home-menu li:hover img {
+    opacity: 1;
+}
 
 /* main section */
 /* page core */
@@ -191,17 +203,20 @@ nav {
 }
 .premium-btn {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    margin-right: 50px;
+    margin-right: 20px;
+    padding: 12px 30px;
     text-align: center;
-    top: 50%;
-    right: 0;
     color: white;
     background: transparent;
     border: 2px solid white;
-    padding: 10px 30px;
     border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.premium-btn:hover {
+    transform: scale(1.1);
 }
 
 /* main block */
@@ -224,6 +239,9 @@ nav {
 }
 .list-inline a {
     text-decoration: none;
+}
+.list-inline li a:hover {
+    color: white;
 }
 
 .album-list {
@@ -442,6 +460,7 @@ footer {
     #home-menu span {
         display: none;
     }
+    
     #playlist-menu {
         text-align: center;
         display: none;
