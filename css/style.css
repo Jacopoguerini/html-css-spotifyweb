@@ -186,12 +186,15 @@ nav {
     right: 0;
     opacity:  0.4;
     z-index: 1020;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .premium-btn {
+    margin-right: 50px;
     text-align: center;
     display: inline-block;
-    position: fixed;
-    top: 0;
+    top: 50%;
     right: 0;
 }
 
