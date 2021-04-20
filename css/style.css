@@ -180,22 +180,28 @@ nav {
 .fixed-top {
     width: calc(100vw - 230px);
     height: 80px;
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     right: 0;
-    opacity:  0.4;
     z-index: 1020;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 .premium-btn {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
     margin-right: 50px;
     text-align: center;
-    display: inline-block;
     top: 50%;
     right: 0;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 12px;
 }
 
 /* main block */
@@ -340,12 +346,10 @@ footer {
     background-color: lightgrey;
 }
 
-
-
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 14px;
 }
   
 /* Track */
@@ -355,7 +359,10 @@ footer {
    
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background-color: rgb(165, 163, 163);
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
 }
 
 /* Handle on hover */
