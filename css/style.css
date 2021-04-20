@@ -187,6 +187,13 @@ nav {
     opacity:  0.4;
     z-index: 1020;
 }
+.premium-btn {
+    text-align: center;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
 
 /* main block */
 .container-flex {
@@ -249,9 +256,7 @@ footer {
     justify-content: space-between;
     color: white;
 }
-footer > div {
-    background-color: red;
-}
+
 .footer-left,
 .footer-right {
     width: 230px;
@@ -265,6 +270,11 @@ footer > div {
     width: 40%;
 }
 
+.footer-left i,
+.footer-right i {
+    font-size: 14px;
+}
+
 /* footer left */
 .footer-left img {
     height: 50px;
@@ -274,9 +284,11 @@ footer > div {
 }
 .footer-left i {
     color: grey;
+    margin-right: 10px;
 }
 .song {
-    width: 50%;
+    width: 45%;
+    margin-left: 5px;
 }
 
 /* footer center */
@@ -304,12 +316,25 @@ footer > div {
     height: 5px;
     background-color: grey;
     border-radius: 20px;
+    margin: 0 15px;
 }
 .state-bar {
     width: 20%;
     height: 100%;
     background-color: lightgrey;
     border-radius: 20%;
+}
+
+/* footer right */
+.volume-bar {
+    width: 50%;
+    height: 3px;
+    background-color: grey;
+}
+.volume-state-bar {
+    width: 30%;
+    height: 100%;
+    background-color: lightgrey;
 }
 
 
@@ -336,7 +361,7 @@ footer > div {
 }
 
 
-@media screen and (min-width: 878px) and (max-width: 1170px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
     .image-block {
         width: calc(96% / 4);
     }
@@ -346,7 +371,7 @@ footer > div {
     }
 }
 
-@media screen and (min-width: 639px) and (max-width: 877px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
     .image-block {
         width: calc(96% / 2);
         margin-right: 0;
@@ -356,11 +381,37 @@ footer > div {
     }
     .icons {
         width: 90%;
+        padding: 0 5px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .navbar ul img {
+        margin-right: 0;
+        width: 30px;
+    }
+
+    .image-block {
+        width: calc(96% / 2);
+    }
+    .album-list .image-block:not(:last-child) {
+        margin-right: 2%;
+    }
+
+    .footer-left img {
+        height: 40px;
+    }
+    .footer-left div:first-of-type {
+        margin: 0 10px;
+    }
+
+    .icons {
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 638px) {
-
+@media screen and (max-width: 575px) {
     nav {
         width: 50px;
     }
@@ -414,7 +465,8 @@ footer > div {
 
     .footer-left,
     .footer-right {
-    width: 28%;
+        font-size: 12px;
+        justify-content: space-around;
     }
 
     .footer-left img {
@@ -426,5 +478,12 @@ footer > div {
 
     .icons {
         width: 100%;
+        font-size: 12px;
+    }
+    .icons .fa-play-circle {
+        font-size: 20px;
+    }
+    .bar span {
+        font-size: 10px;
     }
 }
