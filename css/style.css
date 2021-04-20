@@ -125,7 +125,6 @@ nav {
 }
 
 /* nav-bottom */
-
 .nav-bottom {
     z-index: 999;
 }
@@ -169,7 +168,6 @@ nav {
 }
 
 /* main section */
-
 /* page core */
 .page-core {
     overflow-y: auto;
@@ -212,7 +210,6 @@ nav {
     text-decoration: none;
 }
 
-
 .album-list {
     width: 100%;
 }
@@ -222,7 +219,6 @@ nav {
 .album-list > p {
     margin-bottom: 15px;
 }
-
 
 .image-block {
     text-align: center;
@@ -251,6 +247,7 @@ footer {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    color: white;
 }
 footer > div {
     background-color: red;
@@ -258,11 +255,63 @@ footer > div {
 .footer-left,
 .footer-right {
     width: 230px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer-center {
     width: 40%;
 }
+
+/* footer left */
+.footer-left img {
+    height: 50px;
+}
+.footer-left p {
+    font-size: 10px;
+}
+.footer-left i {
+    color: grey;
+}
+.song {
+    width: 50%;
+}
+
+/* footer center */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 45px;
+    margin: 5px auto 0 auto;
+}
+.icons .fa-play-circle {
+    font-size: 30px;
+    margin: 0 5px;
+}
+.bar {
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+.progression-bar {
+    width: 80%;
+    height: 5px;
+    background-color: grey;
+    border-radius: 20px;
+}
+.state-bar {
+    width: 20%;
+    height: 100%;
+    background-color: lightgrey;
+    border-radius: 20%;
+}
+
 
 
 /* scrollbar */
@@ -291,6 +340,10 @@ footer > div {
     .image-block {
         width: calc(96% / 4);
     }
+
+    .icons {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 639px) and (max-width: 877px) {
@@ -300,6 +353,9 @@ footer > div {
     }
     .album-list .image-block:not(:last-child) {
         margin-right: 2%;
+    }
+    .icons {
+        width: 90%;
     }
 }
 
@@ -325,10 +381,20 @@ footer > div {
     #home-menu span {
         display: none;
     }
-
     #playlist-menu {
         text-align: center;
         display: none;
+    }
+    .nav-bottom span {
+        display: none;
+    }
+    .download,
+    .account {
+        justify-content: center;
+    }
+    .download {
+        height: auto;
+        border-bottom: none;
     }
 
     .fixed-top {
@@ -343,11 +409,22 @@ footer > div {
         width: calc(96% / 2);
     }
     .album-list .image-block:not(:last-child) {
-            margin-right: 2%;
+        margin-right: 2%;
     }
 
     .footer-left,
     .footer-right {
     width: 28%;
-}
+    }
+
+    .footer-left img {
+        height: 40px;
+    }
+    .footer-left div:first-of-type {
+        margin: 0 10px;
+    }
+
+    .icons {
+        width: 100%;
+    }
 }
