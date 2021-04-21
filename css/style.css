@@ -298,19 +298,26 @@ nav {
 }
 
 .image-block img {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .image-block h3,
 .image-block p {
     display: block;
+    width: 95%;
+    margin: 10px auto;
 }
+
 .album-cover {
-    max-width: 95%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .layover {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -418,7 +425,7 @@ footer {
 }
 .progression-bar {
     width: 80%;
-    height: 5px;
+    height: 6px;
     background-color: grey;
     border-radius: 20px;
     margin: 0 15px;
@@ -427,7 +434,7 @@ footer {
     width: 20%;
     height: 100%;
     background-color: lightgrey;
-    border-radius: 20%;
+    border-radius: 20px;
     position: relative;
 }
 
@@ -454,12 +461,14 @@ footer {
 }
 .volume-bar {
     width: 50%;
-    height: 3px;
+    height: 5px;
+    border-radius: 20px;
     background-color: grey;
 }
 .volume-state-bar {
     width: 30%;
     height: 100%;
+    border-radius: 20px;
     background-color: lightgrey;
     position: relative;
 }
@@ -661,7 +670,60 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-  
+    .icons {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .icons i {
+        margin: 0 5px;
+    }
+
+    .icons .fa-play-circle {
+        font-size: 14px;
+    }
+
+    .bar span {
+        display: none;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 20%;
+    }
+    .footer-center {
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .footer-left i {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .footer-left {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-left: 3px;
+    }
+
+    .song {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-left div:first-of-type {
+        margin: 0 0;
+    }
+
+    .favourite {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        padding: 5px 0;
+    }
 }
 
 /* media query height */
