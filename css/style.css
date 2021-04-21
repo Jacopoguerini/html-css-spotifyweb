@@ -286,15 +286,16 @@ nav {
 .album-list .image-block:not(:last-child) {
     margin-right: 1%;
 }
-.album-list > p {
-    margin-bottom: 15px;
+
+.album-list p:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .image-block {
     text-align: center;
     width: calc(95% / 6);
     margin: 10px 0;
-    position: relative;
 }
 
 .image-block img {
@@ -315,6 +316,7 @@ nav {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
+    position: relative;
 }
 .layover {
     width: 100%;
@@ -322,9 +324,29 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.layover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    text-shadow: 0 0 20px black;
+}
+.layover:hover {
+    opacity: 1;
+}
+.layover i:hover {
+    cursor: pointer;
 }
 
 #artists img {
+    border-radius: 50%;
+}
+#artists .layover {
     border-radius: 50%;
 }
 
@@ -425,7 +447,7 @@ footer {
 }
 .progression-bar {
     width: 80%;
-    height: 6px;
+    height: 5px;
     background-color: grey;
     border-radius: 20px;
     margin: 0 15px;
@@ -681,10 +703,6 @@ footer {
 
     .icons .fa-play-circle {
         font-size: 14px;
-    }
-
-    .bar span {
-        display: none;
     }
 
     .footer-left,
