@@ -135,10 +135,7 @@ nav {
 #playlist-menu li {
     padding-bottom: 10px;
 }
-#playlist-menu li:hover {
-    color: white;
-    cursor: pointer;
-}
+
 
 /* nav-bottom */
 .nav-bottom {
@@ -164,10 +161,6 @@ nav {
     font-size: 10px;
     margin-left: 8px;
 }
-.download:hover span {
-    color: white;
-
-}
 
 .account {
     padding: 10px 0;
@@ -186,22 +179,16 @@ nav {
     margin-left: 10px;
 }
 
-#home-menu li:hover {
+/* nav hover */
+#playlist-menu li:hover {
     color: white;
     cursor: pointer;
 }
-#home-menu li:hover img {
-    opacity: 1;
-}
-.add-playlist:hover {
-    cursor: pointer;
-}
-.add-playlist:hover span {
+
+.download:hover span {
     color: white;
 }
-#playlist-menu .add-playlist:hover i {
-    background-color: white;
-}
+
 /* main section */
 /* page core */
 .page-core {
@@ -239,10 +226,6 @@ nav {
     cursor: pointer;
     transition: transform 0.2s;
 }
-.premium-btn:hover {
-    transform: scale(1.1);
-}
-
 
 /* main block */
 .container-flex {
@@ -276,20 +259,12 @@ nav {
     transform: translateX(-50%);
     border-bottom: 2px solid #1DB954;
 }
-.list-inline li a:hover {
-    color: white;
-}
 
 .album-list {
     width: 100%;
 }
 .album-list .image-block:not(:last-child) {
     margin-right: 1%;
-}
-
-.album-list p:hover {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 .image-block {
@@ -336,18 +311,49 @@ nav {
     font-size: 60px;
     text-shadow: 0 0 20px black;
 }
-.layover:hover {
-    opacity: 1;
-}
-.layover i:hover {
-    cursor: pointer;
-}
 
 #artists img {
     border-radius: 50%;
 }
 #artists .layover {
     border-radius: 50%;
+}
+
+/* main section hover */
+.premium-btn:hover {
+    transform: scale(1.1);
+}
+
+.list-inline li a:hover {
+    color: white;
+}
+
+#home-menu li:hover {
+    color: white;
+    cursor: pointer;
+}
+#home-menu li:hover img {
+    opacity: 1;
+}
+.add-playlist:hover {
+    cursor: pointer;
+}
+.add-playlist:hover span {
+    color: white;
+}
+#playlist-menu .add-playlist:hover i {
+    background-color: white;
+}
+
+.album-list p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.layover:hover {
+    opacity: 1;
+}
+.layover i:hover {
+    cursor: pointer;
 }
 
 /* footer */
@@ -395,13 +401,6 @@ footer {
     margin-right: 10px;
 }
 
-.footer-left img:hover {
-    cursor: pointer;
-}
-.footer-left i:hover {
-    color: white;
-    cursor: pointer;
-}
 .song {
     width: 45%;
     margin-left: 5px;
@@ -409,6 +408,16 @@ footer {
 .song h5 {
     margin: 5px 0;
 }
+
+/* footer-left hover */
+.footer-left img:hover {
+    cursor: pointer;
+}
+.footer-left i:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .song h5:hover,
 .song p:hover {
     text-decoration: underline;
@@ -429,13 +438,6 @@ footer {
     font-size: 30px;
     margin: 0 5px;
     transition: transform 0.1s;
-}
-.icons i:hover {
-    cursor: pointer;
-    color: white;
-}
-.icons .fa-play-circle:hover {
-    transform: scale(1.2);
 }
 
 .bar {
@@ -458,6 +460,15 @@ footer {
     background-color: lightgrey;
     border-radius: 20px;
     position: relative;
+}
+
+/* footer-center hover */
+.icons i:hover {
+    cursor: pointer;
+    color: white;
+}
+.icons .fa-play-circle:hover {
+    transform: scale(1.2);
 }
 
 .progression-bar:hover .state-bar {
@@ -495,6 +506,7 @@ footer {
     position: relative;
 }
 
+/* footer-right hover */
 .volume-bar:hover .volume-state-bar {
     background-color: #1DB954;
     cursor: pointer;
@@ -658,8 +670,13 @@ footer {
         margin-right: 2%;
     }
 
+    footer {
+        justify-content: center;
+    }
+
     .footer-left,
     .footer-right {
+        width: 28%;
         font-size: 12px;
         justify-content: space-around;
     }
@@ -670,18 +687,28 @@ footer {
     }
 
     .footer-left img {
-        height: 40px;
+        height: 35px;
     }
     .footer-left div:first-of-type {
         margin: 0 10px;
     }
 
+    .footer-right {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .footer-center {
+        width: 40%;
+        padding: 0 10px;
+    }
+
     .icons {
         width: 100%;
-        font-size: 12px;
+        font-size: 20px;
     }
     .icons .fa-play-circle {
-        font-size: 20px;
+        font-size: 24px;
     }
     .bar span {
         font-size: 10px;
@@ -698,7 +725,7 @@ footer {
     }
 
     .icons i {
-        margin: 0 5px;
+        margin: 0 10px;
     }
 
     .icons .fa-play-circle {
@@ -722,7 +749,12 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         padding: 0;
-        margin-left: 3px;
+        margin: 5px 0px 5px 3px;
+    }
+
+    .footer-left img {
+        height: 35px;
+        width: 35px;
     }
 
     .song {
